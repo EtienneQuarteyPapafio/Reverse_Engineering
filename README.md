@@ -6,6 +6,6 @@ This repo contains some Reverse Engineering write ups I've created, it analyses 
 
 # Author
 
-Etienne Quartey-Papafio
-Malware Analyst & Reverse Engineer
+Etienne Quartey-Papafio\
+Malware Analyst & Reverse Engineer\
 GitHub: https://github.com/EtienneQuarteyPapafio
