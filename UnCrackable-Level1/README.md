@@ -2,26 +2,26 @@
 
 ## Overview
 
-This is a sample Crackme from OWASP, it is my first attempt at reverse engineering Android samples. I had a bit of help using John Hammond's guide: https://www.youtube.com/watch?v=QwwLSyRzNwo however the sample code was recently updated which meant a lot of the video was not transferrable.
+This is a sample CrackMe from OWASP, it is my first attempt at reverse engineering Android samples, and samples in Java overall. I had a bit of help using John Hammond's guide: https://www.youtube.com/watch?v=QwwLSyRzNwo for initial decompilation and log cat debugging, however the sample code was recently updated which meant a lot of the video was not directly transferable.
 
 
-Simple emulator loaded for pixel 6
+This is a simple emulator loaded for pixel 6, using the android studio IDE.
 
 <img src="/UnCrackable-Level1/img/1.png" width=50% height=50%>
 
-We see uncrackable1.apk loaded into the apps.
+We see uncrackable1.apk loaded into the app tray.
 
 <img src="/UnCrackable-Level1/img/2.png" width=50% height=50%>
 
-We are prompted to enter a string into the app.
+The program prompts the user to enter a string into the text box.
 
 <img src="/UnCrackable-Level1/img/3.png" width=50% height=50%>
 
-and shown a rejection pop-up when the correct string has not been entered.
+and is shown a rejection pop-up when the correct string has not been entered.
 
 <img src="/UnCrackable-Level1/img/4.png" width=50% height=50%>
 
-Using jadx-gui we can decompile the Apk file to look a the source code, upon looking closely at sg.vantagepoint, it has various blocks of functions it imports. Under sg.vantagepoint.a.a.a we see the program imports various functions using java.security: an InvalidKeyException, NoSuchAlgorithimException, a Ciper, NoSuchPaddingException, and a SecretKeySpec.
+Using jadx-gui we can decompile the APK file to look at the source code, upon looking closely at the sg.vantagepoint, it has various blocks of functions it imports. Under sg.vantagepoint.a.a.a we see the program imports various functions using java.security: an InvalidKeyException, NoSuchAlgorithimException, a Ciper, NoSuchPaddingException, and a SecretKeySpec.
 
 The Exception functions are used possibly along with the verification functions of the input the display the message of the key being wrong. Whilst the Ciper and SecretKeySpec would be for the actual key that the program generates possibly based off AES.
 
