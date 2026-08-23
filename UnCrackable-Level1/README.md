@@ -27,7 +27,7 @@ Under a.b we see it imports a context function and the entire function is a bool
 
 <img src="/UnCrackable-Level1/img/5.2.png" width=100% height=100%>
 
-Under a.c it imports the android build and the java file functions, we also see various functions being created, c.a, c.b, and c.c, these individual functions seem to check for a string, directory, or file, c.a checks for the file "su" under a a path name "PATH" and returns true if it exists.
+Under a.c it imports the android build and the java file functions, we also see various functions being created, c.a, c.b, and c.c, these individual functions seem to check for a string, directory, or file, c.a checks for the file "su" under a path name "PATH" and returns true if it exists.
 
 <img src="/UnCrackable-Level1/img/5.3.png" width=100% height=100%>
 
@@ -49,11 +49,11 @@ The MainActivity section of the APK has various imports including AlertDialog, D
 
 <img src="/UnCrackable-Level1/img/7.png" width=100% height=100%>
 
-There are three defined classes in this section of code 'a', onCreate, and verify declared with 'a' containing the string "This is unacceptable. The app is now going to exit.", possibly alluding to an anti-debugging check, and an Override with system.exit occurring once triggered. onCreate is an override that uses sg.vantagepoint.a.c to check for Root access, sg.vantagepoint.a.b to check for a debugger affirming my previous suspicion, then the app triggers function 'a', which closes the app.
+There are three defined classes in this section of code: 'a', onCreate, and verify.'a' contains the string "This is unacceptable. The app is now going to exit.", possibly alluding to an anti-debugging check, and an Override with system.exit occurring once triggered. onCreate is an override that uses sg.vantagepoint.a.c to check for Root access, sg.vantagepoint.a.b to check for a debugger affirming my previous suspicion, then the app triggers function 'a', which closes the app.
 
 The final function will display a success or failure text depending on the entered string, this is where the logic for the key verification dialog is declared.
 
-Using android studio we can use log cat to look up variables and have the code printed in the log file, by copying and pasting some of the code used in the decryption function.
+Using android studio we can use logcat to look up variables and have the code printed in the log file, by copying and pasting some of the code used in the decryption function to bypass the debugging feature.
 
 <img src="/UnCrackable-Level1/img/9.png" width=100% height=100%>
 
