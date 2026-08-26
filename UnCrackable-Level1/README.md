@@ -43,7 +43,7 @@ Under sg.vantagepoint.uncrackable1, we see various imports, a Base64, and a log 
 
 The try statement in this case uses the sg.vantagepoint.a.a.a which is where the cryptography function is defined.
 
-8d127684cbc37c17616d806cf50473cc is stored as an argument for the first array within it, whilst the base64 decoded 5UJiFctbmgbDoLXmpL12mkno8HT4Lv8dlat8FxR2GOc= is stored as the second argument. When the exception is caught by the catch function bArrA is changed to bArr, which is 0. If the string input matches bArra it is returned. It may be possible to find the cipher or the secret key at runtime if we hook unto the file at runtime, however it is possible that the application has anti debugging techniques enabled which can prevent us from further analysis.
+8d127684cbc37c17616d806cf50473cc is stored as an argument for the first array within it, whilst the base64 code 5UJiFctbmgbDoLXmpL12mkno8HT4Lv8dlat8FxR2GOc= is stored as the second argument, a function of java decodes it at runtime. Using cyberchef we could use this information to decode this, however we are attempting to use other tools for this method instead. When the exception is caught by the catch function bArrA is changed to bArr, which is 0. If the string input matches bArra it is returned. It may be possible to find the cipher or the secret key at runtime if we hook unto the file at runtime, however it is possible that the application has anti debugging techniques enabled which can prevent us from further analysis.
 
 The MainActivity section of the APK has various imports including AlertDialog, DialogInterface, uncrackable1, and sg.vantagepoint.a.b, and sg.vantagepoint.a.c, (but not a.a where the cipher function is stored).
 
