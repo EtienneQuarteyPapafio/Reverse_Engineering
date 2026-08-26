@@ -57,7 +57,9 @@ Using android studio we can use logcat to look up variables and have the code pr
 
 <img src="/UnCrackable-Level1/img/9.png" width=100% height=100%>
 
-We end up with the string "I want to believe". However this method would not be viable to use with heavily obfuscated APKs, even with the light obfuscation of function names it was enough to confuse me a little. Using Frida would be a possible counteraction for a packed sample as we could dump contents of the file from memory. 
+We end up with the string "I want to believe". However this method would not be viable to use with heavily obfuscated APKs, even with the light obfuscation of function names it was enough to confuse me a little. Using Frida would be a possible counteraction for a packed sample as we could dump contents of the file from memory.
+
+## Frida Hooking
 
 # Author
 
