@@ -4,6 +4,8 @@
 
 This is an online set of labs designed as an introduction to Frida. I opted not to look at clues or solutions but rather create my own reasoning. The following is my methodology in how I solved this challenge.
 
+## Methodology
+
 When working with an unknown file it is important to understand what the program does, the first thing that I usually do is I run the file, it gives important information at what I will be trying to find, and ultimately what I will be trying to exploit. The apk I ran asks the user for an input and verifies if the input is correct or not, already this gives me clues as to what I am looking for when I use JadX to statically analyse it. There will likely be a stored number or code, a way to verify if the number matches what the user enters, and a response based on the results.
 
 <img src="/Frida%200x1/img/1.png" width=50% height=50%>
