@@ -20,19 +20,24 @@ There is another function declared in the app called "check", it checks that if 
 ```
 x = (x*2)+4
 ```
-From my deductions, if I hook the random number and get the number 50 I will have to input 104. I now will need to create a new javascript in order to hook to the application. I called this script frida1.
+From my deductions, if I hook the random number and get the number 50 I will have to input 104. 
 
 <img src="/Frida%200x1/img/3.png" width=50% height=50%>
 
 
-Frida -U -f com.ad2001.frida0x1 -l frida1.js
-
-
-
-
+I now will need to create a new javascript in order to hook to the application. I called this script frida1. In this script I created a constant for the application using the aforementioned package name, then appended the class that I want to monitor which in this case is MainActivity. I created another function to get the return of the function get_random(), then it prints the integer. Furthermore, the script will then use the function to obtain the number I should input and print that statement.
 
 <img src="/Frida%200x1/img/4.png" width=50% height=50%>
+
+Using command line within the folder where the script is saved, I made Frida start the application and implement the script.
+
+```
+Frida -U -f com.ad2001.frida0x1 -l frida1.js
+```
 <img src="/Frida%200x1/img/5.png" width=50% height=50%>
+
+Thankfully my script was correct and printed the correct number, and when I entered it the string to verify the correct input appeared.
+
 <img src="/Frida%200x1/img/6.png" width=50% height=50%>
 
 # Author
