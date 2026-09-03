@@ -13,6 +13,8 @@ This repo contains some Reverse Engineering write ups I've created, it reverses 
 
 - ## [Frida 0x1](https://github.com/EtienneQuarteyPapafio/Reverse_Engineering/tree/main/Frida%200x1)
 
+- ## [Frida 0x2](https://github.com/EtienneQuarteyPapafio/Reverse_Engineering/tree/main/Frida%200x2)
+
 # Author
 
 Etienne Quartey-Papafio\
