@@ -14,6 +14,8 @@ This repo contains some Reverse Engineering write ups I've created, it reverses 
 
 - ## [Frida 0x2](https://github.com/EtienneQuarteyPapafio/Reverse_Engineering/tree/main/Frida%200x2)
 
+- ## [Crack Me Easy](https://github.com/EtienneQuarteyPapafio/Reverse_Engineering/tree/main/CrackMeEasy)
+
 # Author
 
 Etienne Quartey-Papafio\
