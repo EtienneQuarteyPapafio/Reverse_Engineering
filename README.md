@@ -5,7 +5,7 @@ This repo contains some Reverse Engineering write ups I've created, it reverses 
 # Malware Analysis
 - ## [re_lotsastuff](https://github.com/EtienneQuarteyPapafio/Malware_Analysis/blob/main/re_lotsastuff/re_lotsastuff.md)
 
-- ## [Lightcord-Setup-Win](https://github.com/EtienneQuarteyPapafio/Malware_Analysis/blob/main/Lightcord-Setup-Win/Lightcord-Setup-Win.md)
+- ## [Lightcord-Setup-Win](https://github.com/EtienneQuarteyPapafio/Malware_Analysis/tree/main/Lightcord-Setup-Win)
   
 # Reverse Engineering
 - ## [UnCrackable-Level1](https://github.com/EtienneQuarteyPapafio/Reverse_Engineering/tree/main/UnCrackable-Level1)
